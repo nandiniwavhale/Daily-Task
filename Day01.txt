@@ -1,0 +1,80 @@
+Q1. Calculate the multiplication and sum of two numbers 
+
+Code: 
+
+# Creating 2 variables for accepting user input
+
+Varnum_1 = int(input("Enter First Number: "))
+Varnum_2 = int(input("Enter Second Number: "))
+
+# To Calculate Multiplication of two numbers
+
+Result_Mul = (Varnum_1*Varnum_2)
+
+#To print the output multiplication of two numbers
+
+print("The Multiplication of two number is:",Result_Mul)
+
+# To Calculate Sum of two numbers
+
+Result_Sum = (Varnum_1 + Varnum_2)
+
+# To Print the output of sum of two numbers using print function
+print("The Sum of two numbers is:", Result_Sum)
+
+--------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------
+
+
+Q2. Declare two variables and print that which variable is largest using ternary operators 
+
+Code:
+
+# Creating 2 variables for accepting input for 2 numbers
+
+Varnum_1 = int(input("Enter First Number: "))
+Varnum_2 = int(input("Enter Second Number: "))
+
+# To Check Which variable is largest
+if(Varnum_1 > Varnum_2):
+    print("The Variable Varnum_1 is Largest Variable than Varnum_2")
+
+else:
+
+    print("The variable Varnum_2 is Largest Variable than Varnum_1")
+
+----------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------
+
+
+Q3. Python program to convert the temperature in degree centigrade to Fahrenheit
+
+Code:
+
+# To Get the temperature in Celsius from user
+celsius = float(input("Enter temperature in Celsius: "))
+
+# Convert Celsius to Fahrenheit
+fahrenheit = (celsius * 9/5) + 32
+
+# Print the result
+print("Converted degree Celsious to fahrenheit is:",fahrenheit)
+
+------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------
+
+Q4. Python program to find the area of a triangle whose sides are given
+
+Code:
+
+# TO get the height and base for calculating area of triangle
+base = int(input("Enter Base: "))
+height= int(input("Enter Height: "))
+
+# Using Result variable to store the area of triangle
+Result = (1/2 * height * base)
+
+#To Print the result
+print("The Area of triangle is:", Result)
+
+
