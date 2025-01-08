@@ -1,0 +1,75 @@
+1. Using input() function take one number from the user and using ternary operators
+check whether the number is even or odd.
+
+Code:
+
+# Accept any one number from user
+Number = int(input("Enter number:"))
+
+#Using Result variable to store variable
+result = "Even" if Number%2==0 else "odd"
+
+#Print the result
+print("The given number is" ,result)
+
+----------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------
+
+2. Using input function take two number and then swap the number.
+
+Code:
+
+# Accept two number from user
+Number_1 = int(input("Enter First number:"))
+Number_2 = int(input("Enter Second number:"))
+
+#Here We swapping the numbers
+Number_1, Number_2 = Number_2,Number_1
+
+#prints the output or result
+print("After Swapping:")
+
+print("First Number:",Number_1)
+print("Second Number:", Number_2)
+
+---------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------
+
+3. Write a Program to Convert Kilometers to Miles.
+
+Code:
+
+#Accept the user input value for kilometers 
+
+Variable_1 = float(input("Enter Kilometers: "))
+
+#using Result_miles to store the output
+
+Result_miles = Variable_1/1.60934
+
+#Print the converted value of kilometers.
+
+print("The Converted Kilometers into miles is:",Result_miles)
+
+----------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------
+
+4. Find the Simple Interest on Rs. 200 for 5 years at 5% per year.
+
+Code:
+
+#Accept the user value for Total amount, years and rate of interest
+
+Principal_Amount = int(input("Enter Total Amount:"))
+Years = int(input("Enter Years:"))
+Rate_of_interest = float(input("Enter Rate of Interest:"))
+
+#Using Simple_Interest Variable to store the result
+
+Simple_Interest = (Principal_Amount*Years*Rate_of_interest)/100
+
+#Print Function for Print the output
+print("The Simple Interest is: ",Simple_Interest)
+
+----------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------
