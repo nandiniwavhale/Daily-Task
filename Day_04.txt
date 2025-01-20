@@ -1,112 +1,94 @@
-1.Python program to check leap year
+1. Declare a div() function with two parameters. Then call the function and pass two
+numbers and display their division.
 
 Code:
 
-# Accept the user input for year
-Year_leap = int(input("Enter Some year to find leap year:"))
+# Creating div() function.
+def div(a,b):
+    result = a/b
+    return result #Return the value
 
-#If condition statement to check the entered year is leap year or not .
-if Year_leap % 4 == 0 :
-    print("This is the leap year.")
+# To take user input
+num_1= int(input("Enter first number: "))
+num_2 = int(input("Enter Second Number: "))
 
-else:
-    print("This is not a leap year.")
+#To store the division result of two numbers.
+Div_result = div(num_1,num_2)
 
---------------------------------------------------------------------------------
---------------------------------------------------------------------------------
+#print the result
+print(Div_result)
 
-2.Python Program to Find the Largest Among Three Numbers.
+--------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------
 
-Code:
-
-#Accept the three numbers from user
-
-First_number = int(input("Enter First Number:"))
-Second_number = int(input("Enter Second Number:"))
-Third_number = int(input("Enter Third Number:"))
-
-#Using Result_max variable to store the largest value.
-Result_max = max(First_number,Second_number,Third_number)
-
-#Print the Result
-print("The Largest Number is:",Result_max)
-
--------------------------------------------------------------------------------
--------------------------------------------------------------------------------
-
-3.Python Program to Check if a Number is Positive, Negative or 0.
+2. Declare a square() function with one parameter. Then call the function and pass one
+number and display the square of that number . 
 
 Code:
 
-#Accept the one number from user
+# Using square function to find square of the number.
+def square(sqr):
 
-First_number = int(input("Enter First Number:"))
-
-#To check the given number is Negative or Positive.
-if First_number > 0 :
-    print("The Given Number is Positive.")
-
-else:
-    print("The Given Number is Negative.")
-
---------------------------------------------------------------------------------
---------------------------------------------------------------------------------
-
-4. A toy vendor supplies three types of toys: Battery Based Toys, Key-based Toys, and Electrical Charging Based Toys. The vendor gives a discount of
-10% on orders for battery-based toys if the order is for more than Rs. 1000. On orders of more than Rs. 100 for key-based toys, a discount of 5% is given,       and a discount of 10% is given on orders for electrical charging based toys of value more than Rs. 500. Assume that the numeric codes 1,2 and 3 are used for battery based toys, key-based toys, and electrical charging based toys respectively. Write a program that reads the product code and the order amount and prints out the net amount that the customer is required to pay after the discount.
-
-Code:
-
-# Get product code and order amount from the user
-product_code = int(input("Enter product code (1 for Battery-based, 2 for Key-based, 3 for Electrical charging-based): "))
-order_amount = float(input("Enter the order amount: "))
-
-# Check the product type and apply the discount accordingly
-if product_code == 1 and order_amount > 1000:
-    discount = 0.10  # 10% discount for battery-based toys
-    
-elif product_code == 2 and order_amount > 100:
-    discount = 0.05  # 5% discount for key-based toys
-    
-elif product_code == 3 and order_amount > 500:
-    discount = 0.10  # 10% discount for electrical charging-based toys
-
-else:
-    discount = 0  # No discount if conditions are not met
-
-# Calculate the final amount after discount
-discount_amount = order_amount * discount
-net_amount = order_amount - discount_amount
-
-# Print the net amount
-print("The net amount to be paid is: Rs.", net_amount)
-
------------------------------------------------------------------------------------------------------------------
------------------------------------------------------------------------------------------------------------------
-
-5.A transport company charges the fare according to following table:
+    result = sqr*sqr
+    return result # Returns the value
 
 
-Distance	Charges
-1-50		8 Rs./Km
-51-100		10 Rs./Km
- >100		12 Rs/Km
+# Accept user input number
+Number_1 = int(input("Enter any number: "))
+
+#To store the square of entered number.
+sqr_func = square(Number_1)
+
+#print The output
+print(sqr_func)
+
+-----------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------
+
+3. Using max() and min() functions display the maximum and minimum of 5 random
+numbers.
 
 Code:
 
-# Get the distance traveled from the user
-distance = float(input("Enter the distance traveled in kilometers: "))
+#Random 5 Numbers
+numbers = [12,23,34,45,56]
 
-# Determine the charges based on the distance
-if distance <= 50:
-    fare = distance * 8  # 8 Rs per km for distances between 1-50 km
-elif distance <= 100:
-    fare = distance * 10  # 10 Rs per km for distances between 51-100 km
-else:
-    fare = distance * 12  # 12 Rs per km for distances greater than 100 km
+# Find and display the maximum and minimum number.
 
-# Print the total fare
-print("The total fare is: Rs.", fare)
+max_num = max(numbers)
+min_num = min(numbers)
 
----------------------------------------------------------------------------------------------------------
----------------------------------------------------------------------------------------------------------
+
+#Print the Output.
+print("Maximum number:", max_num)
+print("Minimum number:", min_num)
+------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------
+
+
+4. Accept a name from the user and display that in lower case using lower() function.
+
+Code:
+
+#Accept the user value
+U_Name = input("Enter Your Name:")
+
+#Prit the lower alphabet of user entered
+print("In Lowercase your name will:",U_Name.lower())
+
+-------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------
+
+5. Write a lambda function that takes one argument and returns 'Positive' if the number is
+greater than 0, 'Negative' if it's less than 0, and 'Zero' if it's 0. Test it with different
+numbers.
+
+Code:
+
+# lamda function
+check_number = lambda x: 'Positive' if x > 0 else 'Negative' if x < 0 else 'Zero'
+
+# Test the lambda function
+number = float(input("Enter a number: "))
+#To print Output
+print("The number is:", check_number(number))
