@@ -1,0 +1,98 @@
+1. Declare a div() function with two parameters. Then call the function and pass two
+numbers and display their division.
+
+Code:
+
+# div function 
+def div(a,b):
+    division= a/b
+    return division
+
+#To accept user input
+Number1 = int(input("Enter First Number: "))
+Number2 = int(input("Enter Second Number: "))
+
+#Creating variable to store output
+
+Div_Fun = div(Number1,Number2)
+
+#To print the Output
+print("The division is: ",Div_Fun)
+-----------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------
+
+2. Declare a square() function with one parameter.Then call the function and pass one
+number and display the square of that number .
+
+Code:
+
+# square funtion
+def square(a):
+    Result = a * a
+    return Result
+
+#To accept the user input
+Sqr_result = int(input("Enter any number:"))
+
+# To store the output
+sqr_num = square(Sqr_result)
+
+#To print the Output
+print("The sqare of the Number is :",sqr_num )
+
+----------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------
+
+3. Using max() and min() functions display the maximum and minimum of 5 random
+numbers.
+
+Code:
+
+#Random 5 Numbers
+numbers = [12,23,34,45,56]
+
+# Find and display the maximum and minimum number.
+
+max_num = max(numbers)
+min_num = min(numbers)
+
+
+#Print the Output.
+print("Maximum number:", max_num)
+print("Minimum number:", min_num)
+
+----------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------
+
+4. Accept a name from the user and display that in lower case using lower() function
+
+Code:
+
+# To accept name from user
+U_name = input("Enter your name: ")
+
+# To store lower case value in lowercase_name
+lowercase_name = U_name.lower()
+
+#print the output
+print("Your name in lowercase is:", lowercase_name)
+
+----------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------
+
+5. Write a lambda function that takes one argument and returns 'Positive' if the number is
+greater than 0, 'Negative' if it's less than 0, and 'Zero' if it's 0. Test it with different
+numbers.
+
+Code:
+
+# Test the lambda function
+check_number = lambda x: 'Positive' if x > 0 else 'Negative' if x < 0 else 'Zero'
+
+#To accept number from user for check
+
+number = float(input("Enter a number: "))
+
+# To print the output
+
+print("The number is:", check_number(number))
