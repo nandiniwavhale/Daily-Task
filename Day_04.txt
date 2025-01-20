@@ -1,0 +1,112 @@
+1.Python program to check leap year
+
+Code:
+
+# Accept the user input for year
+Year_leap = int(input("Enter Some year to find leap year:"))
+
+#If condition statement to check the entered year is leap year or not .
+if Year_leap % 4 == 0 :
+    print("This is the leap year.")
+
+else:
+    print("This is not a leap year.")
+
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+
+2.Python Program to Find the Largest Among Three Numbers.
+
+Code:
+
+#Accept the three numbers from user
+
+First_number = int(input("Enter First Number:"))
+Second_number = int(input("Enter Second Number:"))
+Third_number = int(input("Enter Third Number:"))
+
+#Using Result_max variable to store the largest value.
+Result_max = max(First_number,Second_number,Third_number)
+
+#Print the Result
+print("The Largest Number is:",Result_max)
+
+-------------------------------------------------------------------------------
+-------------------------------------------------------------------------------
+
+3.Python Program to Check if a Number is Positive, Negative or 0.
+
+Code:
+
+#Accept the one number from user
+
+First_number = int(input("Enter First Number:"))
+
+#To check the given number is Negative or Positive.
+if First_number > 0 :
+    print("The Given Number is Positive.")
+
+else:
+    print("The Given Number is Negative.")
+
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+
+4. A toy vendor supplies three types of toys: Battery Based Toys, Key-based Toys, and Electrical Charging Based Toys. The vendor gives a discount of
+10% on orders for battery-based toys if the order is for more than Rs. 1000. On orders of more than Rs. 100 for key-based toys, a discount of 5% is given,       and a discount of 10% is given on orders for electrical charging based toys of value more than Rs. 500. Assume that the numeric codes 1,2 and 3 are used for battery based toys, key-based toys, and electrical charging based toys respectively. Write a program that reads the product code and the order amount and prints out the net amount that the customer is required to pay after the discount.
+
+Code:
+
+# Get product code and order amount from the user
+product_code = int(input("Enter product code (1 for Battery-based, 2 for Key-based, 3 for Electrical charging-based): "))
+order_amount = float(input("Enter the order amount: "))
+
+# Check the product type and apply the discount accordingly
+if product_code == 1 and order_amount > 1000:
+    discount = 0.10  # 10% discount for battery-based toys
+    
+elif product_code == 2 and order_amount > 100:
+    discount = 0.05  # 5% discount for key-based toys
+    
+elif product_code == 3 and order_amount > 500:
+    discount = 0.10  # 10% discount for electrical charging-based toys
+
+else:
+    discount = 0  # No discount if conditions are not met
+
+# Calculate the final amount after discount
+discount_amount = order_amount * discount
+net_amount = order_amount - discount_amount
+
+# Print the net amount
+print("The net amount to be paid is: Rs.", net_amount)
+
+-----------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------
+
+5.A transport company charges the fare according to following table:
+
+
+Distance	Charges
+1-50		8 Rs./Km
+51-100		10 Rs./Km
+ >100		12 Rs/Km
+
+Code:
+
+# Get the distance traveled from the user
+distance = float(input("Enter the distance traveled in kilometers: "))
+
+# Determine the charges based on the distance
+if distance <= 50:
+    fare = distance * 8  # 8 Rs per km for distances between 1-50 km
+elif distance <= 100:
+    fare = distance * 10  # 10 Rs per km for distances between 51-100 km
+else:
+    fare = distance * 12  # 12 Rs per km for distances greater than 100 km
+
+# Print the total fare
+print("The total fare is: Rs.", fare)
+
+---------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------
